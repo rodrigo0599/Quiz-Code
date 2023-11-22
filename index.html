@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Timed Coding Quiz</title>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <ul>
+                <li><a href="#highscores" id="highscores-link">View High Scores</a></li>
+                <li id="timer" class="timer">Time: <span id="time-left">75</span></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="start-container" class="start-quiz card">
+            <h1>Welcome to the JavaScript Quiz Challenge</h1>
+            <p>
+                You have 75 seconds to answer five series of JavaScript questions. Incorrect answers will penalize your time by ten seconds. Your total score will be your remaining time after the last question. Click "Start" when you're ready.
+            </p>
+            <button id="start-btn" class="start-btn">Start Quiz</button>
+        </section>
+
+        <section id="question-container" class="hide card">
+            <h2 id="question">Question</h2>
+            <div id="answer-buttons" class="btn-grid">
+                <button class="btn">Answer 1</button>
+                <button class="btn">Answer 2</button>
+                <button class="btn">Answer 3</button>
+                <button class="btn">Answer 4</button>
+            </div>
+            <h3 id="check-answer" class="correct-wrong hide"></h3>
+            <button id="next-btn" class="next-btn hide">Next</button>
+        </section>
+
+        <section id="score-container" class="hide card">
+            <form id="submit-form">
+                <h3 id="your-score">Your Score</h3>
+                <label for="initials-field">Enter your initials to save the score:</label>
+                <input type="text" id="initials-field" name="initials" maxlength="3" placeholder="Enter your initials">
+                <button id="submit-btn" type="submit">Submit</button>
+            </form>
+        </section>
+
+        <section id="highscores" class="highscores-container hide card">
+            <h2 class="centered">Leaderboard</h2>
+            <div id="highscore" class="highscore highscore-list"></div>
+            <button id="restart-btn">Restart</button>
+            <button id="clear-btn">Clear Scores</button>
+        </section>
+    </main>
+</body>
+
+    <script src="./assets/js/script.js"></script>
+</body>
+
+</html>
+

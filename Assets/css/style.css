@@ -1,0 +1,166 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+:root {
+  --primary-color: #007bff; 
+  --secondary-color: #28a745; 
+  --tertiary-color: #aaaaaa;
+  --white-color: #ffffff;
+  --correct-color: #6b8e23;
+  --text-color: #333333; 
+  --border-radius: 8px; 
+}
+html {
+  box-sizing: border-box; 
+}
+body {
+  font-family: 'Segoe UI', 'Arial', 'sans-serif'; 
+  line-height: 1.6;
+  width: 90%; 
+  margin: 0 auto;
+  background-color: gray;
+  color: var(--text-color); /
+  
+}
+
+a {
+  text-decoration: none;
+}
+
+.centered {
+  text-align: center;
+}
+
+
+header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 25px 0;
+}
+
+.scores a,
+.timer {
+  font-size: 20px;
+  color: black;
+}
+
+.scores a {
+  color: var(--secondary-color);
+  cursor: pointer;
+}
+
+.scores a:hover {
+  color: var(--tertiary-color);
+}
+
+
+.start-quiz {
+  text-align: center;
+}
+
+h1 {
+  margin-bottom: 10px;
+}
+
+h2 {
+  color: var(black);
+  border-top: 1px solid var(--tertiary-color);
+  margin: 20px 0;
+  font-style: italic;
+  text-align: center;
+}
+
+
+.btn-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); 
+  gap: 15px;
+  margin-top: 20px;
+}
+
+button {
+  font-size: 1rem;
+  padding: 12px 20px;
+  background-color: var(--primary-color);
+  border-radius: var(--border-radius);
+  transition: background-color 0.3s; 
+}
+button:focus {
+  outline: 2px solid var(--secondary-color);
+  outline-offset: 2px;
+}
+button:hover {
+  background-color: var(--secondary-color);
+}
+
+.hide {
+  display: none;
+}
+
+.btn.correct {
+  background-color: var(--correct-color);
+}
+
+.btn.wrong {
+  background-color: var(--tertiary-color);
+}
+
+
+.controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 0;
+}
+
+
+input[type="text"] {
+  padding: 10px;
+  margin: 8px 0;
+  border: 1px solid var(--tertiary-color);
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+
+.highscore {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  justify-content: center;
+}
+
+.name-div,
+.score-div {
+  flex: 1 35%;
+  padding: 10px 0;
+  border: 1px solid var(--correct-color);
+}
+
+
+@media screen and (max-width: 575px) {
+  .btn-grid {
+    grid-template-columns: repeat(1, auto);
+    gap: 0;
+    margin: 0;
+  }
+}
+
+.card {
+  background-color: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15); 
+  border-radius: 10px;
+  padding: 9em;
+  margin: 8em 0; 
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; 
+  border: 1px solid #e0e0e0; 
+}
+
+.card:hover {
+  transform: translateY(-5px); 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+}
