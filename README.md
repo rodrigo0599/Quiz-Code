@@ -21,6 +21,8 @@ Save Score: Enter your initials to save the score.
 
 View High Scores: Access the high scores from the main menu.
 
+![The Start Screen for the JavaScript Quiz](./Assets/Images/start.png)
+
 
 
 ## License 
