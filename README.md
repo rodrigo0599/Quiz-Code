@@ -9,7 +9,7 @@ N/A
 
 ## Usage 
 
-You can access the website here: https://rodrigo0599.netlify.app/
+You can access the website here: [https://rodrigo0599.netlify.app/](https://rodrigo0599-coding-quiz.netlify.app/)
 
 Start the Quiz: Click on the 'Start Quiz' button.
 
